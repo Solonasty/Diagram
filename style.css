@@ -1,0 +1,67 @@
+@font-face {
+    font-family: GHEAGrapalat;
+    src: url(assets/fonts/gheagrapalat.otf);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.legend__item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.text {
+    font-family: GHEAGrapalat;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding: 0;
+    margin: 10px;
+}
+
+.square {
+    height: 14px;
+    width: 14px;
+    background-color: #555;
+    margin-right: 20px;
+}
+
+.square--pink {
+    background-color: rgba(255, 105, 180, 1);
+}
+
+.square--green {
+    background-color: rgba(151, 187, 49, 1);
+}
+
+.square--grey {
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.active--pink {
+    border-bottom: 1px solid rgba(255, 105, 180, 1);
+}
+
+.active--green {
+    border-bottom: 1px solid rgba(151, 187, 49, 1);
+}
+
+.active--grey {
+    border-bottom: 1px solid  rgba(217, 217, 217, 1);;
+}

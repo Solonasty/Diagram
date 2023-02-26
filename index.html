@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jscript.js" defer></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type='text/javascript' src='http://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="diagram">
+
+            <img src="Круговая диаграмма.svg" alt="" usemap="#map" />
+
+            <map name="map">
+                <area shape="poly" coords="147, 24, 256, 258, 513, 258, 511, 223, 505, 194, 497, 169, 485, 140, 471, 117, 455, 93, 433, 70, 410, 53, 384, 36, 354, 22, 323, 11, 292, 5, 260, 2, 228, 3, 191, 10, 165, 18" class="pink"
+                onmouseover="underline()"
+                onmouseout="removeUnderline()"/>
+
+                <area shape="poly" coords="146, 25, 113, 43, 89, 62, 66, 85, 44, 116, 28, 143, 14, 174, 6, 206, 2, 239, 0, 267, 5, 304, 12, 334, 24, 365, 40, 394, 61, 422, 81, 443, 106, 465, 136, 484, 170, 499, 207, 511, 255, 257" class="green"
+                onmouseover="underline()"
+                onmouseout="removeUnderline()"/>
+
+                <area shape="poly" coords="207, 511, 239, 514, 267, 514, 303, 510, 337, 501, 367, 489, 393, 475, 420, 455, 441, 436, 465, 407, 485, 376, 498, 346, 509, 308, 513, 282, 513, 259, 256, 259" class="grey" onmouseover="underline()"
+                onmouseout="removeUnderline()"/>
+            </map>
+        </div>
+
+        <div class="legend">
+
+            <div class="legend__item legend__item--pink">
+                <div class="square square--pink"></div>
+                <h2 class="text text--pink">розовый сегмент</h2>
+            </div>
+
+            <div class="legend__item legend__item--green">
+                <div class="square square--green"></div>
+                <h2 class="text text--green">зеленый сегмент</h2>
+            </div>
+
+            <div class="legend__item legend__item--grey" id="grey">
+                <div class="square square--grey"></div>
+                <h2 class="text text--grey">серый сегмент</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
